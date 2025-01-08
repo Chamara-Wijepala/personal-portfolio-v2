@@ -1,5 +1,6 @@
-import type { Metadata } from 'next';
 import './globals.css';
+import { Open_Sans } from 'next/font/google';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: {
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 	description: 'Fullstack developer portfolio, PERN stack + Next.js',
 };
 
+const openSans = Open_Sans({ subsets: ['latin'] });
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body className={`${openSans.className}`}>{children}</body>
 		</html>
 	);
 }

@@ -19,7 +19,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${openSans.className} bg-primary-900`}>{children}</body>
+			<body
+				className={`${openSans.className} bg-primary-900 text-secondary-100 font-extrabold uppercase`}
+			>
+				{children}
+			</body>
 		</html>
 	);
 }

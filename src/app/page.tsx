@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import SectionHeader from '@/ui/components/section-header';
 
 export default function Home() {
 	return (
@@ -58,6 +59,17 @@ export default function Home() {
 					</div>
 				</header>
 			</section>
+
+			<main className="flex flex-col gap-24 md:gap-32 py-24 md:py-32">
+				<section className="max-w-[46rem] mx-auto px-4 md:px-0">
+					<SectionHeader heading="About me" />
+					<p className="mt-4 text-sm md:text-base">
+						I&apos;m a self taught fullstack developer. I started learning how
+						to code in 2020 and quickly discovered how much I loved it. For me,
+						nothing is more satisfying than building something from scratch.
+					</p>
+				</section>
+			</main>
 		</>
 	);
 }

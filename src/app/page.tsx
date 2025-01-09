@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import SectionHeader from '@/ui/components/section-header';
+import skills from './skills';
 
 export default function Home() {
 	return (
@@ -68,6 +69,25 @@ export default function Home() {
 						to code in 2020 and quickly discovered how much I loved it. For me,
 						nothing is more satisfying than building something from scratch.
 					</p>
+				</section>
+
+				<section className="w-full max-w-[46rem] mx-auto">
+					<div className="bg-primary-800 border-t-4 border-accent-primary-400 p-4">
+						<h2 className="text-xl my-4 md:mx-4">Skills</h2>
+						<div className="grid items-center grid-cols-[repeat(auto-fit,minmax(100px,1fr))] grid-rows-[100px] auto-rows-[100px] md:grid-cols-[repeat(auto-fit,minmax(150px,1fr))] md:grid-rows-[150px] md:auto-rows-[150px]">
+							{skills.map(({ id, name, icon: Icon }) => (
+								<div
+									key={id}
+									className="flex flex-col items-center flex-grow gap-2 p-4 group"
+								>
+									<Icon className="w-12 h-12 md:w-20 md:h-20" />
+									<span className="text-xs text-center md:text-transparent group-hover:text-secondary-100 transition-colors duration-300">
+										{name}
+									</span>
+								</div>
+							))}
+						</div>
+					</div>
 				</section>
 			</main>
 		</>

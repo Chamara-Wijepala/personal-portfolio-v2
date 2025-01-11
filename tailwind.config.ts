@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from 'tailwindcss';
 
 export default {
@@ -15,6 +16,7 @@ export default {
 				},
 				secondary: {
 					100: '#ffffff',
+					200: '#b3b3b3',
 				},
 				'accent-primary': {
 					500: '#3d4d43',
@@ -25,5 +27,5 @@ export default {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/container-queries')],
 } satisfies Config;

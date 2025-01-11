@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import SectionHeader from '@/ui/components/section-header';
-import skills from './skills';
+import Project from '@/components/ui/project';
+import SectionHeader from '@/components/ui/section-header';
+import { skills, majorProjects, minorProjects } from './data';
 
 export default function Home() {
 	return (
@@ -80,13 +81,33 @@ export default function Home() {
 									key={id}
 									className="flex flex-col items-center flex-grow gap-2 p-4 group"
 								>
-									<Icon className="w-12 h-12 md:w-20 md:h-20" />
-									<span className="text-xs text-center md:text-transparent group-hover:text-secondary-100 transition-colors duration-300">
+									<Icon className="w-12 h-12 md:w-20 md:h-20 group-hover:text-accent-primary-300 transition-colors duration-300" />
+									<span className="text-xs text-center text-secondary-200 group-hover:text-accent-primary-300 transition-colors duration-300">
 										{name}
 									</span>
 								</div>
 							))}
 						</div>
+					</div>
+				</section>
+
+				<section className="w-full max-w-5xl mx-auto px-4 @container">
+					<SectionHeader heading="Personal Projects" />
+					<div className="flex flex-col gap-12 md:gap-32 mt-8">
+						{majorProjects.map((project, index) => (
+							<Project key={project.id} project={project} index={index} />
+						))}
+					</div>
+				</section>
+
+				<section className="w-full max-w-5xl mx-auto px-4">
+					<SectionHeader heading="More Projects" />
+					<div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-12">
+						{minorProjects.map((project, index) => (
+							<div key={project.id} className="@container">
+								<Project project={project} index={index} />
+							</div>
+						))}
 					</div>
 				</section>
 			</main>

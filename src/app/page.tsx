@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Project from '@/components/ui/project';
 import SectionHeader from '@/components/ui/section-header';
+import Footer from '@/components/ui/footer';
 import { skills, majorProjects, minorProjects } from './data';
 
 export default function Home() {
@@ -111,6 +112,8 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
+
+			<Footer />
 		</>
 	);
 }

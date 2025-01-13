@@ -9,6 +9,9 @@ export const metadata: Metadata = {
 		default: 'Chamara Wijepala',
 	},
 	description: 'Fullstack developer portfolio, PERN stack + Next.js',
+	icons: {
+		icon: '/favicon.svg',
+	},
 };
 
 const openSans = Open_Sans({ subsets: ['latin'] });

@@ -10,7 +10,7 @@ export default function Home() {
 			<Header />
 
 			<main className="flex flex-col gap-24 md:gap-32 py-24 md:py-32">
-				<section className="max-w-[46rem] mx-auto px-4 md:px-0">
+				<section id="about" className="max-w-[46rem] mx-auto px-4 md:px-0">
 					<SectionHeader heading="About me" />
 					<p className="mt-4 text-sm md:text-base">
 						I&apos;m a self taught fullstack developer. I started learning how
@@ -19,7 +19,7 @@ export default function Home() {
 					</p>
 				</section>
 
-				<section className="w-full max-w-[46rem] mx-auto">
+				<section id="skills" className="w-full max-w-[46rem] mx-auto">
 					<div className="bg-primary-800 border-t-4 border-accent-primary-400 p-4">
 						<h2 className="text-xl my-4 md:mx-4">Skills</h2>
 						<div className="grid items-center grid-cols-[repeat(auto-fit,minmax(100px,1fr))] grid-rows-[100px] auto-rows-[100px] md:grid-cols-[repeat(auto-fit,minmax(150px,1fr))] md:grid-rows-[150px] md:auto-rows-[150px]">
@@ -38,7 +38,10 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="w-full max-w-5xl mx-auto px-4 @container">
+				<section
+					id="projects"
+					className="w-full max-w-5xl mx-auto px-4 @container"
+				>
 					<SectionHeader heading="Personal Projects" />
 					<div className="flex flex-col gap-12 md:gap-32 mt-8">
 						{majorProjects.map((project, index) => (

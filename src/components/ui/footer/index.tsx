@@ -14,7 +14,7 @@ export default function Footer() {
 
 	return (
 		<footer className="bg-primary-800">
-			<section className="max-w-5xl mx-auto px-4 py-12">
+			<section id="contact" className="max-w-5xl mx-auto px-4 py-12">
 				<div className="md:max-w-[40%] mb-8">
 					<SectionHeader heading="Let's connect" />
 				</div>

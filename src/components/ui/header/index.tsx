@@ -5,7 +5,25 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Header() {
 	const headerRef = useRef<HTMLElement>(null);
-	const [headerHeight, setHeaderHeight] = useState(0);
+	// 56 is the height of the header in pixels. This is a magic number and is bad
+	// practice. But it fixes the issue of the header popping in after the site
+	// has already loaded.
+	const [headerHeight, setHeaderHeight] = useState(56);
+
+	function scrollWithOffset(e: React.SyntheticEvent) {
+		e.preventDefault();
+		const target = e.target as HTMLAnchorElement;
+		const id = target.getAttribute('href')?.replace('#', '');
+		// asserted because the elements will always exist
+		const section = document.getElementById(String(id)) as HTMLElement;
+		const yCord = section.getBoundingClientRect().top + window.scrollY;
+		const yOffset = -Math.abs(headerHeight + 16);
+
+		window.scroll({
+			top: yCord + yOffset,
+			behavior: 'smooth',
+		});
+	}
 
 	useEffect(() => {
 		if (headerRef.current) {
@@ -48,7 +66,7 @@ export default function Header() {
 			<header ref={headerRef} className="bg-primary-800 sticky top-0 z-50">
 				{/* set to 46rem to align with the hero text at large screens */}
 				<div className="max-w-[46rem] mx-auto">
-					<nav className="flex text-center">
+					<nav onClick={scrollWithOffset} className="flex text-center">
 						<a
 							href="#about"
 							className="hover:bg-accent-primary-300 p-4 flex-grow transition-colors hidden sm:block"

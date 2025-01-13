@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useRef, useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -39,6 +39,14 @@ export default function Header() {
 				}}
 				className="flex flex-col justify-between relative"
 			>
+				<Image
+					src="/background.jpg"
+					alt="Dark minimalist background"
+					fill={true}
+					sizes="100vw"
+					priority={true}
+					className="absolute -z-50 opacity-35"
+				/>
 				<div className="flex flex-col flex-grow justify-center items-center gap-4">
 					<div className="text-center">
 						<p className="sm:text-xl md:text-3xl">Hi, I&apos;m Chamara</p>

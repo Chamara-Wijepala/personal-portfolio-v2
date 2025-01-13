@@ -1,4 +1,5 @@
 import './globals.css';
+import SmoothScrolling from '@/components/smooth-scrolling';
 import { Open_Sans } from 'next/font/google';
 import type { Metadata } from 'next';
 
@@ -22,7 +23,7 @@ export default function RootLayout({
 			<body
 				className={`${openSans.className} bg-primary-900 text-secondary-100 font-extrabold uppercase`}
 			>
-				{children}
+				<SmoothScrolling>{children}</SmoothScrolling>
 			</body>
 		</html>
 	);

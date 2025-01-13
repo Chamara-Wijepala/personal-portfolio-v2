@@ -50,6 +50,7 @@ export default function Project({
 					<div className="flex gap-4 mt-auto">
 						<a
 							href={project.demoUrl}
+							target="_blank"
 							className="hover:text-accent-primary-300 transition-colors duration-300 text-sm md:text-base flex gap-2 items-center"
 						>
 							<FaExternalLinkAlt />
@@ -57,6 +58,7 @@ export default function Project({
 						</a>
 						<a
 							href={project.repoUrl}
+							target="_blank"
 							className="hover:text-accent-primary-300 transition-colors duration-300 text-sm md:text-base flex gap-2 items-center"
 						>
 							<FaGithub />

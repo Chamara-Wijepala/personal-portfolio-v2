@@ -1,14 +1,10 @@
 import { FaReact, FaNodeJs, FaSass } from 'react-icons/fa';
 import {
-	SiNextdotjs,
 	SiTypescript,
 	SiExpress,
 	SiTailwindcss,
-	SiMongodb,
 	SiPostgresql,
 	SiPrisma,
-	SiMongoose,
-	SiEjs,
 } from 'react-icons/si';
 
 export const skills = [

@@ -13,9 +13,9 @@ export default function Home() {
 				<section id="about" className="max-w-[46rem] mx-auto px-4 md:px-0">
 					<SectionHeader heading="About me" />
 					<p className="mt-4 text-sm md:text-base">
-						I&apos;m a self taught fullstack developer. I started learning how
-						to code in 2020 and quickly discovered how much I loved it. For me,
-						nothing is more satisfying than building something from scratch.
+						I&apos;m a self-taught fullstack developer. I started coding in 2020
+						and quickly fell in love with the process of learning,
+						problem-solving, and continuous improvement.
 					</p>
 				</section>
 

@@ -13,20 +13,38 @@ import {
 
 export const skills = [
 	{ id: 1, name: 'React', icon: FaReact },
-	{ id: 2, name: 'Next.js', icon: SiNextdotjs },
+	// { id: 2, name: 'Next.js', icon: SiNextdotjs },
 	{ id: 3, name: 'TypeScript', icon: SiTypescript },
 	{ id: 4, name: 'Node', icon: FaNodeJs },
 	{ id: 5, name: 'Express.js', icon: SiExpress },
 	{ id: 6, name: 'Tailwind CSS', icon: SiTailwindcss },
 	{ id: 7, name: 'Sass/SCSS', icon: FaSass },
-	{ id: 8, name: 'MongoDB', icon: SiMongodb },
+	// { id: 8, name: 'MongoDB', icon: SiMongodb },
 	{ id: 9, name: 'PostgreSQL', icon: SiPostgresql },
 	{ id: 10, name: 'Prisma', icon: SiPrisma },
-	{ id: 11, name: 'Mongoose', icon: SiMongoose },
-	{ id: 12, name: 'EJS', icon: SiEjs },
+	// { id: 11, name: 'Mongoose', icon: SiMongoose },
+	// { id: 12, name: 'EJS', icon: SiEjs },
 ];
 
 export const majorProjects = [
+	{
+		id: 4,
+		name: 'Odinbook',
+		imageUrl: '/odinbook.png',
+		alt: 'odinbook login page',
+		description:
+			'Fullstack social media app with user registration, posts, comments, likes, and profile customization.',
+		builtWith: [
+			'TypeScript',
+			'React',
+			'Tailwind',
+			'Express.js',
+			'Prisma',
+			'PostgreSQL',
+		],
+		demoUrl: 'https://odinbook-client-tm1f.onrender.com/',
+		repoUrl: 'https://github.com/Chamara-Wijepala/odinbook',
+	},
 	{
 		id: 1,
 		name: 'Positivus',

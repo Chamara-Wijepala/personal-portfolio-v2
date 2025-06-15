@@ -8,7 +8,8 @@ export const metadata: Metadata = {
 		template: 'Chamara Wijepala | %s',
 		default: 'Chamara Wijepala',
 	},
-	description: 'Fullstack developer portfolio, PERN stack + Next.js',
+	description:
+		'Fullstack developer portfolio, React, Node.js, Express.js and PostgreSQL',
 	icons: {
 		icon: '/favicon.svg',
 	},

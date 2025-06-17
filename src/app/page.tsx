@@ -52,7 +52,8 @@ export default function Home() {
 
 				<section className="w-full max-w-5xl mx-auto px-4">
 					<SectionHeader heading="More Projects" />
-					<div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-12">
+					{/* 288px from subtracting this section's x padding from 320px */}
+					<div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(288px,1fr))] gap-12">
 						{minorProjects.map((project, index) => (
 							<div key={project.id} className="@container">
 								<Project project={project} index={index} />

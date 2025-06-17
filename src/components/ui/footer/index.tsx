@@ -55,7 +55,7 @@ export default function Footer() {
 								>
 									<span
 										ref={tooltipRef}
-										className="absolute left-1/2 translate-x-[-50%] translate-y-[-125%] p-1 text-xs bg-accent-primary-400 text-nowrap opacity-0 transition-opacity duration-300"
+										className="absolute left-1/2 translate-x-[-100%] sm:translate-x-[-50%] translate-y-[-125%] p-1 text-xs bg-accent-primary-400 text-nowrap opacity-0 transition-opacity duration-300"
 									>
 										Copy to clipboard
 									</span>

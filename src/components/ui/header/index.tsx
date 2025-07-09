@@ -49,13 +49,19 @@ export default function Header() {
 				/>
 				<div className="flex flex-col flex-grow justify-center items-center gap-4">
 					<div className="text-center">
-						<p className="sm:text-xl md:text-3xl">Hi, I&apos;m Chamara</p>
+						<p className="sm:text-xl md:text-3xl animate-[reveal_0.8s_ease-out]">
+							Hi, I&apos;m Chamara.
+						</p>
 						<h1 className="text-5xl sm:text-7xl md:text-9xl">
-							<div className="text-accent-secondary">Fullstack</div>
-							<div>Developer</div>
+							<div className="text-accent-secondary animate-[slideInRight10_0.8s_ease-out]">
+								Fullstack
+							</div>
+							<div className="animate-[slideInLeft10_0.8s_ease-out]">
+								Developer
+							</div>
 						</h1>
 					</div>
-					<div className="flex gap-4">
+					<div className="flex gap-4 opacity-0 animate-[reveal_1.8s_ease-out_0.5s_forwards]">
 						<a href="https://www.github.com/Chamara-Wijepala" target="_blank">
 							<span className="sr-only">github</span>
 							<FaGithub className="w-8 h-8 md:w-12 md:h-12 hover:text-accent-primary-300 transition-colors" />

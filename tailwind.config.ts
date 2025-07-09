@@ -25,6 +25,20 @@ export default {
 				},
 				'accent-secondary': '#da8157',
 			},
+			keyframes: {
+				reveal: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				slideInLeft10: {
+					'0%': { transform: 'translateX(-10%)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' },
+				},
+				slideInRight10: {
+					'0%': { transform: 'translateX(10%)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' },
+				},
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/container-queries')],
